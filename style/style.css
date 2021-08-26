@@ -1,0 +1,15 @@
+.newdiv {
+        display: block;
+        width: 250px;
+        height: 125px;   
+    }
+    .extra {
+        display: block;
+        width: 125px;
+        height: 62px;   
+    }
+
+    .border_darker {
+        display: block;
+        border: 5px solid rgba(0,0,0, 0.4);
+    }
