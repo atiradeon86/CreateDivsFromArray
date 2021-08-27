@@ -1,22 +1,23 @@
 .newdiv {
-        display: block;
-        width: 250px;
-        height: 125px;   
+    display: block;
+    width: 250px;
+    height: 125px;   
+    color: white;
 }
 div.extradiv {
-        display: block;
-        width: 125px;
-        height: 62px;   
-        color: white;
-        margin: 0 auto;
+    display: block;
+    width: 125px;
+    height: 62px;   
+    color: white;
+    margin: 0 auto;
 }
 
 .border_darker {
-        display: block;
-        border: 5px solid rgba(0,0,0, 0.4);
+    display: block;
+    border: 5px solid rgba(0,0,0, 0.4);
 }
 
 button#start {
-    margin-top: 10px;
-    margin-bottom: 15px;
+margin-top: 10px;
+margin-bottom: 15px;
 }

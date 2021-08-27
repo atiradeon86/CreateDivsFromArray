@@ -29,7 +29,7 @@ const extra = [
     color: ['blue'],
   },
   {
-    content: 'Some another extra content ..',
+    content: 'Some extra content ..',
     color: 'red'
   },
   {
@@ -90,4 +90,3 @@ btn_start.addEventListener("click", function () {
   createExtraDivs(extra);
 
 });
-
