@@ -17,7 +17,7 @@ div.extradiv {
     border: 5px solid rgba(0,0,0, 0.4);
 }
 
-button#start {
-margin-top: 10px;
-margin-bottom: 15px;
+button#start,button#clear {
+    margin-top: 10px;
+    margin-bottom: 15px;
 }

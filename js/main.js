@@ -1,4 +1,5 @@
 let btn_start = document.querySelector("#start");
+let btn_clear = document.querySelector("#clear");
 let content = document.querySelector("#container");
 
 let extradivs = "";
@@ -89,4 +90,13 @@ btn_start.addEventListener("click", function () {
   createDivs(data);
   createExtraDivs(extra);
 
+});
+
+btn_clear.addEventListener("click", function () {
+
+  let divs = document.querySelectorAll("div.newdiv") ;
+    for (let i = 0; i < divs.length; i++) {
+      divs[i].remove();
+    }
+ 
 });
