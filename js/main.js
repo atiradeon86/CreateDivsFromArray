@@ -1,6 +1,5 @@
 let btn_start = document.querySelector("#start");
 let content = document.querySelector("#container");
-let extra_colors = [];
 
 let extradivs = "";
 const data = [
@@ -28,7 +27,6 @@ const extra = [
   {
     content: ['Some Extra Content ...'],
     color: ['blue'],
-    description: ['this is an extra element of array']
   },
   {
     content: ['Some another extra content ....'],
@@ -44,23 +42,15 @@ const extra = [
 function createExtraDivs(extra) {
 
   for (let i = 0; i < extra.length; i++) {
-        
-    var extra_color = extra[i].color;       
-    extra_colors.push(extra_color);
+
+    let extra_color = extra[i].color;
     let extradivs = document.createElement('div');
     extradivs.setAttribute("class", "extradiv");
-    extradivs.style.setProperty('background-color', extra_colors[i]);
+    extradivs.style.setProperty('background-color', extra_color);
     let update = document.querySelector("#newdiv");
     update.appendChild(extradivs);
-   
-    console.log(update);
-   
 
-}
-
-  document.querySelectorAll('div.newdiv.border_darker').forEach(function(divs) {
-
-  });
+  }
 
 }
 
@@ -79,12 +69,12 @@ function createDivs(data) {
     newdivs.classList.add("border_darker");
     newdivs.appendChild(document.createTextNode(text));
     content.appendChild(newdivs);
-    
+
   }
 
 }
 
-btn_start.addEventListener("click", function() { 
+btn_start.addEventListener("click", function () {
 
   createDivs(data);
   createExtraDivs(extra);
