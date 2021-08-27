@@ -3,10 +3,12 @@
         width: 250px;
         height: 125px;   
 }
-.extra {
+div.extradiv {
         display: block;
         width: 125px;
         height: 62px;   
+        color: white;
+        margin: 0 auto;
 }
 
 .border_darker {

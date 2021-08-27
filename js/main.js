@@ -4,37 +4,41 @@ let content = document.querySelector("#container");
 let extradivs = "";
 const data = [
   {
-    content: ['Some Text ...'],
-    color: ['red']
+    content: 'Some Text .',
+    color: 'red'
   },
   {
-    content: ['Some text again ...'],
-    color: ['green']
+    content: 'Some text again ..',
+    color: 'green'
   },
   {
-    content: ['Some text again ......'],
-    color: ['blue']
+    content: 'Some text again ...',
+    color: 'blue'
   }
   ,
   {
-    content: ['Some text again ......'],
-    color: ['grey']
+    content: 'Some text again ....',
+    color: 'grey'
   }
 
 ]
 
 const extra = [
   {
-    content: ['Some Extra Content ...'],
+    content: 'Some Extra Content .',
     color: ['blue'],
   },
   {
-    content: ['Some another extra content ....'],
-    color: ['red']
+    content: 'Some another extra content ..',
+    color: 'red'
   },
   {
-    content: ['Some extra content .....'],
-    color: ['green']
+    content: 'Some extra content ...',
+    color: 'green'
+  },
+  {
+    content: 'Some extra content ....',
+    color: 'DodgerBlue'
   }
 
 ]
@@ -44,12 +48,18 @@ function createExtraDivs(extra) {
   for (let i = 0; i < extra.length; i++) {
 
     let extra_color = extra[i].color;
+    let extra_content = extra[i].content;
     let extradivs = document.createElement('div');
     extradivs.setAttribute("class", "extradiv");
     extradivs.style.setProperty('background-color', extra_color);
     let update = document.querySelector("#newdiv");
-    update.appendChild(extradivs);
 
+    let div_to_update = document.querySelectorAll('div.newdiv.border_darker')[i]; 
+    div_to_update.appendChild(extradivs);
+    let extradiv_to_update = document.querySelectorAll('div.extradiv')[i];
+    extradiv_to_update.appendChild(document.createTextNode(extra_content));
+    extradiv_to_update.classList.add("border_darker");
+     
   }
 
 }
